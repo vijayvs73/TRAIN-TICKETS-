@@ -1,20 +1,25 @@
 # TRAIN TICKETS DATA SETS
-Unique Transactions: Each row represents a unique transaction.
-Date of Purchase: The 'Date of Purchase' column indicates the date when the purchase was made.
-Time of Purchase: The 'Time of Purchase' column indicates the specific time when the purchase was made.
-Purchase Type: The 'Purchase Type' column indicates whether the purchase was made online or at a station.
-Payment Method: The 'Payment Method' column indicates the method of payment used.
-Railcard: The 'Railcard' column indicates whether a railcard was used for the purchase.
-Ticket Class: The 'Ticket Class' column indicates the class of the ticket (e.g., Standard).
-Ticket Type: The 'Ticket Type' column indicates the type of ticket purchased (e.g., Advance).
-Price: The 'Price' column indicates the cost of the ticket.
-Journey Details: The 'Departure Station' and 'Arrival Destination' columns indicate the starting and ending points of the journey.
-Journey Timing: The 'Date of Journey', 'Departure Time', and 'Arrival Time' columns indicate the scheduled journey details.
-Actual Arrival Time: The 'Actual Arrival Time' column indicates when the train actually arrived.
-Journey Status: The 'Journey Status' column indicates whether the journey was on time or delayed.
-Reason for Delay: The 'Reason for Delay' column provides the reason for any delays (if applicable).
-Refund Request: The 'Refund Request' column indicates whether a refund was requested for the journey.
-**Potential Insights and Analysis:**
+(1)Purchase Details:
+Date of Purchase: The date when the purchase was made.
+Time of Purchase: The specific time when the purchase was made.
+Purchase Type: Indicates whether the purchase was made online or at a station.
+Payment Method: The method of payment used.
+Railcard: Indicates whether a railcard was used for the purchase.
+Ticket Class: The class of the ticket (e.g., Standard).
+Ticket Type: The type of ticket purchased (e.g., Advance).
+Price: The cost of the ticket.
+(2)Journey Details:
+Departure Station: The starting point of the journey.
+Arrival Destination: The ending point of the journey.
+Date of Journey: The scheduled date of the journey.
+Departure Time: The scheduled departure time.
+Arrival Time: The scheduled arrival time.
+Actual Arrival Time: The actual arrival time.
+Journey Status: Indicates whether the journey was on time or delayed.
+Reason for Delay: Provides the reason for any delays (if applicable).
+(3)Refund Details:
+Refund Request: Indicates whether a refund was requested for the journey.
+(4)Potential Insights and Analysis:
 Purchase Trends: Analyze purchase trends over time to identify peak purchase periods.
 Payment Method Preferences: Determine the most common payment methods used by customers.
 Online vs. Station Purchases: Compare the frequency and characteristics of online purchases versus station purchases.
