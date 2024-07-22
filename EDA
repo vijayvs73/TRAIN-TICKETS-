@@ -1,0 +1,58 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the Excel file
+file_path = "C:\\Users\\ASUS\\Downloads\\project.xlsx"
+df = pd.read_excel(file_path)
+
+# Summary statistics
+summary_stats = df.describe()
+
+# Missing values
+missing_values = df.isnull().sum()
+
+print("Summary Statistics:\n", summary_stats)
+print("\nMissing Values:\n", missing_values)
+
+# Purchase Type Distribution
+plt.figure(figsize=(10, 6))
+sns.countplot(data=df, x='Purchase Type')
+plt.title('Distribution of Purchase Types')
+plt.xlabel('Purchase Type')
+plt.ylabel('Count')
+plt.show()
+
+# Payment Method Distribution
+plt.figure(figsize=(10, 6))
+sns.countplot(data=df, x='Payment Method')
+plt.title('Distribution of Payment Methods')
+plt.xlabel('Payment Method')
+plt.ylabel('Count')
+
+# Journey Status Distribution
+plt.figure(figsize=(10, 6))
+sns.countplot(data=df, x='Journey Status')
+plt.title('Distribution of Journey Status')
+plt.xlabel('Journey Status')
+plt.ylabel('Count')
+plt.show()
+
+# Price Distribution
+plt.figure(figsize=(10, 6))
+sns.histplot(data=df, x='Price', bins=30, kde=True)
+plt.title('Distribution of Ticket Prices')
+plt.xlabel('Price (£)')
+plt.ylabel('Frequency')
+plt.show()
+
+# Delay Reasons (only include non-missing values)
+delay_reasons = df['Reason for Delay'].dropna()
+
+plt.figure(figsize=(10, 6))
+sns.countplot(y=delay_reasons, order=delay_reasons.value_counts().index)
+plt.title('Frequency of Delay Reasons')
+plt.xlabel('Count')
+plt.ylabel('Reason for Delay')
+plt.show()
+
